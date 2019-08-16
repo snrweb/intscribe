@@ -1,0 +1,606 @@
+.clear-float {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  font-family: -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  color: black;
+}
+
+b {
+  font-weight: 600;
+}
+
+.inputError,
+.error-alert {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  display: block;
+  margin-bottom: 5px;
+  padding: 8px 5px;
+  text-align: center;
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.success-alert {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  display: block;
+  margin-bottom: 5px;
+  padding: 8px 5px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  padding: 8px 11px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+.input-wrapper {
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+input {
+  border: none;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding-left: 5px;
+  height: 40px;
+  width: 99%;
+  font-family: -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+select,
+.select {
+  width: 50%;
+  height: 40px;
+  border: none;
+  background: #eee;
+  font-family: -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+textarea {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 1%;
+  width: 98%;
+  resize: none;
+  font-family: -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+.title {
+  color: green;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px 0 #ccc;
+}
+
+.img-decoy {
+  position: absolute;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0;
+}
+
+.img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.visible {
+  visibility: visible;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.upvote,
+.bookmarked {
+  color: green;
+  fill: green;
+}
+
+.downvote {
+  color: green;
+  fill: red;
+}
+
+.neutral {
+  color: hsla(0, 0%, 0%, 0.5);
+  fill: #525252;
+}
+
+.green {
+  background: green;
+}
+
+.green-fill {
+  fill: green;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.58;
+  letter-spacing: -0.004em;
+  margin: 0;
+  background: #eef5f0;
+}
+
+#intscribe {
+  position: relative;
+  padding-top: 50px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navBar {
+  height: 40px;
+  width: 100%;
+  background: green;
+  box-shadow: 0 1px 2px 0 #213826;
+  position: fixed;
+  z-index: 5;
+}
+
+.navBarLogo {
+  float: left;
+  margin-top: 1px;
+  width: 35px;
+  height: 35px;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+}
+
+.navBarSearch {
+  float: left;
+  width: 30%;
+}
+
+.navBarSearch input {
+  width: 100%;
+  height: 31px;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+.navBarSearch-icon {
+  float: left;
+  margin: 5px 0 0 15%;
+  fill: white;
+}
+
+.navBarProfile {
+  float: left;
+  max-width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 10%;
+  margin-left: 40%;
+}
+
+.navBarProfile p {
+  display: none;
+}
+
+.navBarProfile div {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-top: 9px;
+}
+
+.navBarNotif {
+  margin-top: 5px;
+  fill: white;
+}
+
+.navBarNotifCount {
+  display: inline-block;
+  color: white;
+  font-size: 0.9em;
+  margin-top: -18px;
+  margin-left: 2px;
+}
+
+.navBarRegister,
+.navBarLogin {
+  margin-top: 4px;
+  height: 30px;
+  box-shadow: 0 2px 4px 0 #012013;
+  float: right;
+  margin-right: 5%;
+}
+
+.navBarRegister button,
+.navBarLogin button {
+  background: green;
+  color: white;
+  min-width: 10%;
+}
+
+/**************************************** css for login form ***********************************/
+.LoginFormWrapper,
+.RegisterFormWrapper {
+  margin: 100px auto;
+  padding: 50px 4%;
+  border-radius: 3px;
+  background: white;
+}
+
+.LoginFormCheckboxWrapper input {
+  width: 5%;
+  height: 10px;
+}
+
+.LoginFormForgotPwdWrapper {
+  margin-right: 1%;
+}
+
+.LoginFormSubmitButton,
+.RegisterFormButton {
+  background: #3c763d;
+  width: 99%;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.LoginFormRegisterWrapper {
+  text-align: center;
+}
+
+/**************************************************css for column one of the home page******************************/
+.columnOne {
+  float: left;
+}
+
+.c1-profile-image {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.c1-username {
+  color: #3b3b3b;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 0.91em;
+}
+
+.c1-user-options {
+  padding-right: 2%;
+  margin-bottom: 5px;
+}
+
+.c1-user-options p {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin: 8px 0 7px;
+}
+
+.c1-user-options span {
+  color: #3c763d;
+  font-size: 0.9em;
+}
+
+.c1-user-options ul {
+  padding: 0;
+  padding-left: 5%;
+  margin: 0;
+  color: black;
+}
+
+.c1-user-options ul li {
+  font-size: 0.9em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #525252;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: #525252;
+}
+
+footer p {
+  display: inline;
+  margin: 4px 0;
+}
+
+/**************************************************css for column two of the home page******************************/
+.columnTwo {
+  float: left;
+}
+
+.c2-editor-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c2-editor-buttons a,
+.c2-editor-buttons p {
+  cursor: pointer;
+  display: block;
+  width: 33%;
+  height: 33px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  padding-top: 6px;
+  font-size: 1.1em;
+  text-align: center;
+  display: inline-block;
+  background: white;
+  color: green;
+  fill: green;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 #ccc;
+}
+
+.c2-editor-buttons a span,
+.c2-editor-buttons p span {
+  display: inline-block;
+  margin-top: -17px;
+}
+
+.c2-post {
+  background: white;
+  margin-bottom: 7px;
+  padding: 8px;
+}
+
+.c2-post-head {
+  margin-bottom: 10px;
+}
+
+.c2-poster-image {
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.c2-poster-profile {
+  float: left;
+  width: 30%;
+  line-height: 1.37;
+}
+
+.c2-poster-username {
+  font-size: 0.9em;
+  color: #3b3b3b;
+  margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.c2-post-time {
+  color: #8a8888;
+  font-size: 0.8em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.c2-interest-name {
+  text-align: center;
+  margin-top: 0;
+  float: left;
+  width: 30%;
+  color: #8a8888;
+  font-size: 0.9em;
+}
+
+.c2-post-in {
+  margin-bottom: 10px;
+}
+
+.c2-post-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.c2-post-body {
+  margin: 5px 0;
+}
+
+.c2-post-in a img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.c2-post-counts {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.c2-post-counts p {
+  font-weight: 600;
+  font-size: 0.93em;
+  color: #3b3b3b;
+  fill: #535353;
+  margin: 0;
+}
+
+.c2-upvote-status {
+  font-size: 0.73em;
+  text-align: center;
+}
+
+.c2-poll-options {
+  margin-top: 10px;
+}
+
+.c2-poll-option {
+  position: relative;
+  min-height: 35px;
+  margin-bottom: 15px;
+  background: #eee;
+}
+
+.c2-poll-option-active {
+  position: absolute;
+  background: #94fea9;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c2-poll-option-c {
+  position: absolute;
+  margin: 0;
+  margin-left: 1%;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: 600;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.c2-poll-option-o {
+  position: absolute;
+  margin: 0;
+  margin-left: 10%;
+  padding-top: 5px;
+  text-align: center;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.c2-poll-option-click {
+  cursor: pointer;
+  position: absolute;
+  background: #3c763d;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.c2-poll-option:hover {
+  background: #cbfdd5;
+}
+
+.c2-post-delete {
+  cursor: pointer;
+}
+
+.c2-bookmark {
+  cursor: pointer;
+}
+
+/**************************************************css for column three of the home page******************************/
+.columnThree {
+  float: left;
+  padding: 5px 1%;
+}
+
+.c3-interest-lists {
+  margin: 0 0 10px;
+  padding: 10px;
+  list-style: none;
+  background: white;
+  box-shadow: inset 0 0 2px grey;
+}
+
+.c3-interest-lists li:first-child {
+  text-transform: capitalize;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: black;
+  margin: 0 0 10px;
+}
+
+.c3-interest-lists li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 5px 0;
+}
+
+.c3-interest-lists li p {
+  margin: 0 0 8px 0;
+}
+
+.c3-interest-lists li button {
+  border: none;
+  border-radius: 3px;
+  fill: white;
+  cursor: pointer;
+}
+
+.c3-interest-lists li button:hover {
+  background: green;
+}
